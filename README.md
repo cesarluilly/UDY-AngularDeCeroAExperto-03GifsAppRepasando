@@ -105,6 +105,10 @@ que utilizamos @ViewChild)
 
 * API api.giphy.com/v1/gifs/search?api_key=PonerKey=naruto&limit=10
 
+* [Uso de HTTPClientModule](https://angular.io/guide/http) 
+para hacer peticiones http con Angular (estos trabajan con 
+observable)
+
 
 
 
