@@ -101,6 +101,9 @@ que utilizamos @ViewChild)
 
 * [Pipe **titlecase**](https://angular.io/api/common/TitleCasePipe)
 
+* https://developers.giphy.com/ de consumo gratuito
+
+* API api.giphy.com/v1/gifs/search?api_key=PonerKey=naruto&limit=10
 
 
 
