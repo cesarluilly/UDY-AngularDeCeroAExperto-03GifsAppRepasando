@@ -85,6 +85,20 @@ que utilizamos @ViewChild)
         ```
 * [Non-null assertion operator desde www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)
 
+* Crear servicio con AngularCLI
+    * `ng generate service gifs/services/gifs --skipTests`
+        * Nota. A partir de la version 4 en adelante
+            angular dise que los servicios tienen que
+            funcionar de manera global y eso lo hace
+            a traves del `providedIn:'root'`.
+            ```typescript
+                @Injectable({
+                providedIn: 'root'
+                })
+            ```
+            y ya con esto no es necesario especificar
+            el servicio en los provided del modulo.
+
 
 
 
