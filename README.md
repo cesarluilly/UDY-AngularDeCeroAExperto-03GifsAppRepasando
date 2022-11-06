@@ -49,8 +49,41 @@ Recuerden que siempre tienen el código fuente al final de la sección para que 
 * [Bootstrap 5](https://getbootstrap.com/)
 * [Flex de bootstrap](https://getbootstrap.com/docs/5.0/utilities/flex/)
 
+* [@ViewChild](https://angular.io/api/core/ViewChild) 
+(Nota: Para mas sencillo tambien se puede utilizar
+FormsModule vista en el proyecto anterior, pero 
+no necesitamos importar un modulo solo para tratar
+con informacion de un Input de HTML y es por eso
+que utilizamos @ViewChild)
 
+* [Evento KeyUp en angular, (keyup.enter)](https://www.geeksforgeeks.org/angular-keyup-event/#:~:text=(keyup)%3A,the%20(keyup)%20event%20occurs.)
 
+* [El simbolo #](https://es.stackoverflow.com/questions/263924/para-que-sirve-estas-etiquetas-angular) cuando esta dentro de un input 
+    * El símbolo numeral (#) indica que se creará una Template reference variable, la cual es una variable que es una referencia al elemento DOM del template en donde se declara.
+    * ```html
+        <input type="email" #email name="email" />
+        <!-- Crea una variable que referencia al elemento input, por consiguiente, podemos hacer algo como: -->
+        {{ email.value }}
+        ```
+    * ```typescript
+        // en el la clase de typescript
+        @ViewChild('email') email: TemplateRef<HTMLInputElement>
+
+        const emailInput = this.email.nativeElement as HTMLInputElement
+        emailInput.value // o .focus() o cualquier propiedad/método disponible en HTMLInputElement
+        ```
+* [Template variables con # en angular](https://angular.io/guide/template-reference-variables)
+* [Referencia local con #](https://www.htmlquick.com/es/tutorials/links.html#linking-to-fragments) 
+    * ```html
+        <a href="#concept">Volver a la sección "Concepto"</a>
+        ```
+
+* [Using the non-null assertion operator --> !](https://learntypescript.dev/07/l2-non-null-assertion-operator)
+    * > El operador de aserción no nulo es un signo de exclamación ( !), y se coloca después de la variable o expresión que queremos decirle a TypeScript que no es nullo undefined.
+    * ```
+        return text!.concat(text!);
+        ```
+* [Non-null assertion operator desde www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)
 
 
 
