@@ -99,6 +99,7 @@ que utilizamos @ViewChild)
             y ya con esto no es necesario especificar
             el servicio en los provided del modulo.
 
+* [Pipe **titlecase**](https://angular.io/api/common/TitleCasePipe)
 
 
 
