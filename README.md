@@ -147,7 +147,11 @@ real sea un null
         });
         ```
 
-
+* [AnimateStyle](https://animate.style/) si nosotros 
+Nota. si le prestamos atencion a como se visualizan los resultados
+cuando buscamos algo, podemos ver un flechaso, 
+entonces esta libreria nos ayudar a que la visualizacion
+sea mejor para el usuario.
 
 
 
