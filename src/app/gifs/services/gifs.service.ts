@@ -23,6 +23,8 @@ export class GifsService {
     // if(localStorage.getItem('historial')){
     //   this._historial = JSON.parse(localStorage.getItem('historial')!);
     // }
+
+    this.resultados = JSON.parse(localStorage.getItem('resultados')!)  || [];
     
   }
 
@@ -39,7 +41,10 @@ export class GifsService {
     this.http.get<ISearchGifsResponse>(`https://api.giphy.com/v1/gifs/search?api_key=1yw5MedL4sPhVszbbHjj06tKlD7ygmDA&q=${ query }&limit=10`)
       .subscribe((resp:ISearchGifsResponse)=> {
         this.resultados = resp.data;
+        localStorage.setItem('resultados', JSON.stringify(this.resultados));
       });
+      
+    
 
     //              //A como se haria con javascript pero es puro pero es mucha carpinteria 
     //              //  y talacha.
@@ -50,6 +55,6 @@ export class GifsService {
     //     })
     //   })
 
-    console.log(this._historial);
+    console.log(this.resultados);
   }
 }
