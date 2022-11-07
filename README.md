@@ -109,7 +109,11 @@ que utilizamos @ViewChild)
 para hacer peticiones http con Angular (estos trabajan con 
 observable)
 
-
+* Estableciendo el valor de una propiedad en el URL de 
+una imagen para que pueda visualizarse
+    * ```html
+        <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+        ```
 
 
 
