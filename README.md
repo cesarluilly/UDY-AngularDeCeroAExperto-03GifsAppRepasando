@@ -115,6 +115,8 @@ una imagen para que pueda visualizarse
         <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
         ```
 
+* Conocer la escrucutura de un Json a traves de https://quicktype.io/
+
 
 
 
