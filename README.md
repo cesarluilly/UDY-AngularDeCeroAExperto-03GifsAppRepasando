@@ -117,9 +117,20 @@ una imagen para que pueda visualizarse
 
 * Conocer la escrucutura de un Json a traves de https://quicktype.io/
 
+* [LocalStorage y SessionStorage](https://www.w3schools.com/html/html5_webstorage.asp)
+    * LocalStorage no es un lugar para guardar informacion
+        sensible como targetas de credito
 
+* [JSON.stringyfy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#:~:text=Description-,JSON.stringify(),a%20replacer%20array%20is%20specified.) 
+y [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
-
+* Tecnica para devolver otro dato en caso de que el valor
+real sea un null
+    * ```typescript
+        //  //En caso de que lo que devuelva el parse sea
+        //  //  null o undefined, entonces regresa el arreglo ya que eso pesa mas que un null o undefined
+        this._historial = JSON.parse(localStorage.getItem('historial')!)  || [];
+        ```
 
 
 
