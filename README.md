@@ -131,9 +131,21 @@ real sea un null
         //  //  null o undefined, entonces regresa el arreglo ya que eso pesa mas que un null o undefined
         this._historial = JSON.parse(localStorage.getItem('historial')!)  || [];
         ```
+* [HttpParams](https://angular.io/api/common/http/HttpParams)
 
-
-
+* Utilizar HttpClient y HttpParams
+    * ```typescript
+        const params = new HttpParams()
+      .set('api_key', this._apiKey)
+      .set('limits', '10')
+      .set('q', query);
+    
+        this.http.get<ISearchGifsResponse>(`${this._servicioUrl}/search`,{params : params})
+        .subscribe((resp:ISearchGifsResponse)=> {
+            this.resultados = resp.data;
+            localStorage.setItem('resultados', JSON.stringify(this.resultados));
+        });
+        ```
 
 
 
