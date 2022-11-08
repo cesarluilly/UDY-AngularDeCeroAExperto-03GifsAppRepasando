@@ -1,8 +1,9 @@
 # [Liga en produccion del proyecto](https://elastic-volhard-9957a7.netlify.app/) 
 * ![aplicacionCorrindo](./imgReadme/aplicacion.png)
 
-# Desglosando los componentes
-![GifsAppAngular-Componentes](./imgReadme/GifsAppAngular-Componentes.jpeg)
+# [Desglosando los modulos y componentes](https://lucid.app/lucidchart/2aac61d5-6671-4df0-8520-714387da4478/view?page=0_0&invitationId=inv_ef7d5abc-950b-443e-85c1-862721ef8e7d#)
+
+* ![GifsAppAngular-Componentes](./imgReadme/GifsAppAngular-Componentes.jpeg)
 
 # GifsApp
 
