@@ -1,4 +1,6 @@
 # [Liga en produccion del proyecto](https://elastic-volhard-9957a7.netlify.app/) 
+* ![aplicacionCorrindo](./imgReadme/aplicacion.png)
+
 # GifsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
